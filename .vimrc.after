@@ -1,0 +1,13 @@
+" maximize horizontal splits vertically from now on
+nmap <leader>vm :set noequalalways winheight=9999 helpheight=9999<cr>:let netrw_winsize = 9999<cr>
+" return normal behavior of horizontal splits being of equal height
+nmap <leader>vn :set equalalways winheight=1 helpheight=20<cr>:unlet netrw_winsize<cr><C-W>=
+
+" Make horizontal splits collapsible
+set noequalalways winheight=999999
+
+let g:vim_markdown_folding_disabled=1
+
+if filereadable(expand("~/.vimrc.after.local"))
+  source ~/.vimrc.after.local
+endif
