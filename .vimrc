@@ -14,6 +14,7 @@ Plugin 'git@github.com:tpope/vim-rails'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'git@github.com:ctrlpvim/ctrlp.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,7 +31,7 @@ colorscheme solarized
 set shell=/bin/bash\ -l
 " Switch on filetype detection and loads
 " indent file (indent.vim) for specific file types
-filetype indent on
+filetype plugin indent on
 filetype on
 set autoindent " Copy indent from the row above
 set si " Smart indent
